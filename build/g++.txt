@@ -1,0 +1,7 @@
+g++ -o BasedURL.exe,
+src/main.cpp,
+src/Interface/BaseMenu.cpp,
+src/Engine/OpenURL.cpp,
+src/Engine/ViewURL.cpp,
+src/Engine/WriteURL.cpp,
+src/Engine/EditURL.cpp
