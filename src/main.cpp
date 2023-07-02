@@ -1,11 +1,13 @@
 #include <iostream>
 #include "Include/include.h"
 #include <Windows.h>
+#include <tchar.h>
 
 HANDLE color = GetStdHandle(STD_OUTPUT_HANDLE);
 
 int main() {
 
+    SetConsoleTitle(_T("BasedURL"));
     SetConsoleTextAttribute(color, 15);
 
     while (true)

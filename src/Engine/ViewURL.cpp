@@ -4,6 +4,8 @@
 #include <string>
 #include "../Include/include.h"
 
+HANDLE colorView = GetStdHandle(STD_OUTPUT_HANDLE);
+
 void ViewURL() {
 
     std::string line;
@@ -13,7 +15,10 @@ void ViewURL() {
 
     while (std::getline(read, line))
     {
-        std::cout << line_number << "." << " " << line << "\n";
+        SetConsoleTextAttribute(colorView, 2);
+        std::cout << line_number << ".";
+        SetConsoleTextAttribute(colorView, 15);
+        std::cout << " " << line << "\n";
         line_number++;
     }
     
